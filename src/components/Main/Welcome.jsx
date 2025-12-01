@@ -28,7 +28,7 @@ const About = () => {
         <div className="flex space-x-2 items-center ">
           <div className="rounded-xl text-xl my-3  px-1  bg-skin-button-accent text-skin-inverted  cursor-pointer sm:text-3xl sm:p-2 hover:bg-skin-button-accent-hover">
             <a
-              href="https://drive.google.com/file/d/1Y3MxOSDK8jn0pTXNmH_hvczJxt0HOkMc/view?usp=drive_link"
+              href="https://drive.google.com/file/d/15ftEEo-GzWxuqMZx49lPAjuB2si7Dyu-/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >

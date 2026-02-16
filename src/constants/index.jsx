@@ -119,12 +119,21 @@ export const projects = [
 export const skills = [
   {
     category: "Languages",
-    items: ["JavaScript", "TypeScript", "Java"],
+    items: ["JavaScript", "TypeScript", "Java", "SQL"],
     icon: <SiJavascript size={40} className="text-yellow-400" />,
   },
   {
     category: "Frontend",
-    items: ["React.js", "Next.js", "CSS", "Redux", "Tailwind", "Three.js"],
+    items: [
+      "React.js",
+      "Next.js",
+      "Redux",
+      "Tailwind CSS",
+      "Three.js/Fiber",
+      "Framer Motion",
+      "shadcn/ui",
+      "React Hook Form",
+    ],
     icon: <FaReact size={40} className="text-cyan-400" />,
   },
   {
@@ -132,7 +141,9 @@ export const skills = [
     items: [
       "Node.js",
       "Express.js",
-      "WebSockets",
+      "Elysia.js",
+      "Prisma",
+      "Zod",
       "MongoDB",
       "PostgreSQL",
       "Redis",
@@ -140,13 +151,19 @@ export const skills = [
     icon: <FaNodeJs size={40} className="text-green-500" />,
   },
   {
-    category: "DevOps & Cloud",
-    items: ["Docker", "Nginx", "AWS EC2", "Git & GitHub Actions"],
+    category: "DevOps & Tools",
+    items: ["Docker", "Nginx", "AWS EC2", "GitHub Actions", "Linux", "Git"],
     icon: <FaDocker size={40} className="text-blue-500" />,
   },
   {
     category: "Realtime & Security",
-    items: ["WebRTC", "Socket.io", "JWT Auth", "Reverse Proxy"],
+    items: [
+      "WebRTC",
+      "Socket.io",
+      "TanStack Query",
+      "JWT Auth",
+      "Reverse Proxy",
+    ],
     icon: <SiNginx size={40} className="text-green-600" />,
   },
 ];

@@ -1,54 +1,36 @@
-import { PiSunFill } from "react-icons/pi";
-import { BiMenuAltLeft } from "react-icons/bi";
-import { BiSolidMoon } from "react-icons/bi";
+import { BiMenuAltRight } from "react-icons/bi";
 import List from "./List";
 import { useState } from "react";
-import { useTheme } from "../../context/Theme";
 import DropDownMenu from "../utils/DropDownMenu";
 
 function Nav({ className }) {
-  const { darkTheme, toggleTheme } = useTheme();
   const [menuShow, setMenuShow] = useState(false);
-  console.log(menuShow);
+
   return (
     <nav
-      className={` flex justify-between items-center py-1 pr-1  sm:px-4 sm:py-3 ${className}`}
+      className={`flex justify-between items-center py-4 px-6 md:px-10 max-w-7xl mx-auto w-full z-50 ${className}`}
     >
-      {/* .Name */}
-      <div className=" uppercase order-2 text-xl font-semibold sm:ml-2 sm:order-1 sm:text-3xl ">
-        Sujoy
-      </div>
+      {/* Name / Logo */}
+      <h1 className="text-2xl font-bold cursor-pointer font-mono tracking-tighter hover:scale-105 transition-transform duration-300">
+        <span className="text-sky-400">&lt;</span>
+        <span className="bg-clip-text text-transparent bg-gradient-to-r from-slate-100 to-slate-400">
+          Sujoy
+        </span>
+        <span className="text-sky-400">/&gt;</span>
+      </h1>
 
-      {/* . menu icon */}
+      {/* Mobile Menu Icon */}
       <button
-        className={`cursor-pointer text-skin-base  text-4xl order-1  sm:hidden dark:text-white `}
+        className="text-slate-100 text-3xl md:hidden hover:text-sky-400 transition-colors"
+        onClick={() => setMenuShow((prev) => !prev)}
       >
-        <BiMenuAltLeft onClick={() => setMenuShow((prevState) => !prevState)} />
+        <BiMenuAltRight />
       </button>
-      {menuShow && <DropDownMenu  closeMenu ={setMenuShow}/>}
-      {/* nav list */}
-      <List className=" hidden sm:flex sm:order-1" />
 
-      {/* theme icon */}
-      {darkTheme ? (
-        <button
-          className=" text-skin-base text-2xl order-3 sm:hidden  "
-          onClick={() => {
-            toggleTheme((value) => !value);
-          }}
-        >
-          <BiSolidMoon />
-        </button>
-      ) : (
-        <button
-          className="text-2xl order-3 sm:hidden  "
-          onClick={() => {
-            toggleTheme((value) => !value);
-          }}
-        >
-          <PiSunFill />
-        </button>
-      )}
+      {menuShow && <DropDownMenu closeMenu={setMenuShow} />}
+
+      {/* Desktop Nav List */}
+      <List className="hidden md:flex" />
     </nav>
   );
 }

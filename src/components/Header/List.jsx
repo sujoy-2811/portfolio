@@ -1,52 +1,33 @@
 import { Link } from "react-scroll";
-
-import { PiSunFill } from "react-icons/pi";
-import { BiSolidMoon } from "react-icons/bi";
-import { useTheme } from "../../context/Theme";
 import { navLinksData } from "../../constants/index";
 
 function List({ className }) {
-  const { darkTheme, toggleTheme } = useTheme();
   return (
-    <div className={` justify-end space-x-10  text-xl  ${className}`}>
-      <ul className="flex space-x-12 order-1">
-        {navLinksData.map((item) => (
-          <li key={item.id}>
-            <Link
-              className=" hover:text-skin-muted"
-              activeClass="active"
-              to={item.link}
-              spy={true}
-              smooth={true}
-              offset={-50}
-              duration={500}
-              // onSetActive={true}
-            >
-              {item.title}
-            </Link>
-          </li>
-        ))}
-      </ul>
-      {darkTheme ? (
-        <button
-          className=" text-skin-base text-3xl order-3 "
-          onClick={() => {
-            toggleTheme((value) => !value);
-          }}
-        >
-          <BiSolidMoon />
-        </button>
-      ) : (
-        <button
-          className="text-3xl order-3 "
-          onClick={() => {
-            toggleTheme((value) => !value);
-          }}
-        >
-          <PiSunFill />
-        </button>
-      )}
-    </div>
+    <ul className={`flex items-center gap-8 ${className}`}>
+      {navLinksData.map((item) => (
+        <li key={item.id}>
+          <Link
+            className="nav-link cursor-pointer py-2 hover:text-sky-400 transition-colors"
+            // activeClass="text-sky-400"
+            to={item.link}
+            spy={true}
+            smooth={true}
+            offset={-80}
+            duration={500}
+          >
+            {item.title}
+          </Link>
+        </li>
+      ))}
+      <a
+        href="https://drive.google.com/file/d/15ftEEo-GzWxuqMZx49lPAjuB2si7Dyu-/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn-outline px-4 py-2 text-sm ml-4"
+      >
+        Resume
+      </a>
+    </ul>
   );
 }
 

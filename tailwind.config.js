@@ -1,44 +1,30 @@
 /** @type {import('tailwindcss').Config} */
-
-function withOpacity(variableName) {
-  return ({ opacityValue }) => {
-    if (opacityValue !== undefined) {
-      return `rgba(var(${variableName}), ${opacityValue})`;
-    }
-    return `rgb(var(${variableName}))`;
-  };
-}
-
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  darkMode: "class",
   theme: {
     extend: {
-      textColor: {
-        skin: {
-          base: withOpacity("--color-text-base"),
-          muted: withOpacity("--color-text-muted"),
-          inverted: withOpacity("--color-text-inverted"),
-        },
-      },
-      backgroundColor: {
-        skin: {
-          fill: withOpacity("--color-fill"),
-          "button-accent": withOpacity("--color-button-accent"),
-          "button-accent-hover": withOpacity("--color-button-accent-hover"),
-          // "button-muted": withOpacity("--color-button-muted"),
-        },
-      },
-      gradientColorStops: {
-        skin: {
-          hue: withOpacity("--color-fill"),
-        },
-      },
       fontFamily: {
-        // skin: {
-        base: ["Roboto", "sans-serif"],
-        title: ["Noto Serif", "serif"],
-        // },
+        sans: ["Inter", "sans-serif"],
+        mono: ["Fira Code", "monospace"],
+      },
+      colors: {
+        slate: {
+          850: "#1e293b", // Adjusting color slightly lighter for readabilty or stick
+        },
+      },
+      animation: {
+        "fade-in": "fadeIn 0.5s ease-in-out",
+        "slide-in-from-top-4": "slideInFromTop 0.5s ease-out",
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        slideInFromTop: {
+          "0%": { transform: "translateY(-1rem)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
+        },
       },
     },
   },

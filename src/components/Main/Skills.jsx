@@ -1,46 +1,47 @@
-// import React from "react";
-// import Skill from "./../utils/Skill";
-// import { skills as skillList } from "./../../constants/index";
-import { BiLogoTailwindCss } from "react-icons/bi";
-import { FaHtml5 } from "react-icons/fa";
-import { FaReact } from "react-icons/fa6";
-import { IoLogoJavascript } from "react-icons/io5";
-import { FaCss3Alt } from "react-icons/fa";
-import { SiAppwrite } from "react-icons/si";
-import { SiFirebase } from "react-icons/si";
-import { IoLogoNodejs } from "react-icons/io5";
-import { SiExpress } from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
+import { skills } from "../../constants";
 
 const Skills = () => {
   return (
-    <section
-      id="skills"
-      className=" flex flex-col items-center  mx-6 sm:flex-row  sm:mt-28 sm:justify-around"
-    >
-      {/* part 1 */}
-      <div className=" mt-6 flex flex-col justify-center items-center my-3 w-full   sm:order-2 sm:w-[40%] ">
-        <h2 className="text-2xl font-semibold mb-1 sm:text-3xl sm:mb-3">
-          SKills
-        </h2>
-        <div className="text-7xl w-full grid grid-cols-4 gap-y-2 p-2 sm:mt-4  sm:gap-4">
-          <FaHtml5 className=" hover:text-[#e34c26]" />
-          <FaCss3Alt className=" hover:text-[#264de4]" />
-          <IoLogoJavascript className=" hover:text-[#f0db4f]" />
-          <FaReact className=" hover:text-[#61DBFB]" />
-          <BiLogoTailwindCss className=" hover:text-[#00b6d7]" />
-          <TbBrandNextjs className=" hover:text-[#fff]" />
-          <IoLogoNodejs className=" hover:text-[#6cc24a]" />
-          <SiExpress className=" hover:text-[#fff]" />
-          <SiAppwrite className=" hover:text-[#fd366e]" />
-          <SiFirebase className=" hover:text-[#f89313]" />
+    <section id="skills" className="py-20 relative w-full overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute top-1/2 right-0 -translate-y-1/2 w-96 h-96 bg-sky-500/10 rounded-full blur-3xl -z-10 animate-pulse"></div>
+
+      <div className="container-custom">
+        <h2 className="section-heading mb-12">Technical Skills</h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {skills.map((skillGroup, index) => (
+            <div
+              key={index}
+              className="glass-card group relative overflow-hidden p-6 hover:bg-slate-800/60 transition-all duration-300 transform hover:-translate-y-1"
+            >
+              {/* Icon Background Watermark */}
+              <div className="absolute -right-6 -bottom-6 opacity-5 group-hover:opacity-10 transition-opacity duration-300 scale-[2.5] grayscale group-hover:grayscale-0 pointer-events-none rotate-12">
+                {skillGroup.icon}
+              </div>
+
+              <div className="flex items-center gap-4 mb-6 relative z-10">
+                <div className="p-3 rounded-lg bg-slate-800/50 border border-slate-700/50 text-3xl group-hover:scale-110 group-hover:text-white transition-all duration-300 shadow-lg shadow-sky-500/5 group-hover:shadow-sky-500/20">
+                  {skillGroup.icon}
+                </div>
+                <h3 className="text-xl font-bold text-slate-100 group-hover:text-sky-400 transition-colors">
+                  {skillGroup.category}
+                </h3>
+              </div>
+
+              <div className="flex flex-wrap gap-2 relative z-10">
+                {skillGroup.items.map((item, i) => (
+                  <span
+                    key={i}
+                    className="px-3 py-1.5 text-xs sm:text-sm font-mono text-slate-400 bg-slate-900/40 border border-slate-700/30 rounded-md hover:border-sky-500/40 hover:text-sky-300 hover:bg-sky-500/5 transition-all duration-300 cursor-default"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
-        {/* images */}
-        <div className="grid"> </div>
-      </div>
-      {/*  . part 2 */}
-      <div className=" hidden mb-4 sm:block sm:order-2 sm:w-[45%]">
-        <img className=" md-8 w-screen" src="skills.svg" alt="my Image" />
       </div>
     </section>
   );

@@ -41,8 +41,8 @@ export const navLinksData = [
 
 export const heroContent = {
   name: "Sujoy Manna",
-  role: "Software Developer Engineer | Full-Stack (MERN)",
-  tagline: "Building scalable, real-time secure applications.",
+  role: "Full-Stack Engineer | System Design",
+  tagline: "Building high-performance, real-time applications at scale.",
   resumeLink:
     "https://drive.google.com/file/d/15ftEEo-GzWxuqMZx49lPAjuB2si7Dyu-/view?usp=sharing",
   socials: {
@@ -56,35 +56,35 @@ export const heroContent = {
 
 export const aboutContent = {
   text: [
-    "I'm a Software Developer Engineer based in Chennai, currently building scalable full-stack applications. My journey started with a strong curiosity for how systems work under the hood, leading me to pursue a BCA and later an MCA from JAIN University, where I honed my fundamentals in computer science.",
-    "I specialize in building scalable applications using React, Next.js, and Node.js. My backend expertise spans both SQL (PostgreSQL) and NoSQL (MongoDB) databases, often paired with Prisma. Additionally, I have deep experience with real-time tech like WebRTC and WebSockets, and DevOps tools such as Docker, Nginx, and AWS EC2.",
-    "Beyond development, I have a strong problem-solving mindset, backed by solving 350+ data structure and algorithm problems on LeetCode. I'm passionate about writing clean, maintainable code and constantly exploring new technologies to optimize system performance and user experience.",
+    "I am a Full-Stack Engineer dedicated to building robust and scalable systems. My expertise lies in the entire development lifecycle—from backend architecture and database optimization to orchestrating containerized deployments. I focus on delivering high-performance applications that prioritize security and user experience.",
+    "My technical stack is centered on efficiency and reliability: React and Next.js for responsive frontends, Node.js and Elysia for high-throughput backends, and modern databases for data persistence. I have specialized experience in implementing real-time communication protocols like WebRTC and WebSockets, as well as streamlining CI/CD pipelines with Docker and AWS.",
+    "Driven by a problem-solving mindset, I have solved over 350 algorithmic challenges on LeetCode. I thrive in dynamic environments where technical excellence and clean, maintainable code are the standard.",
   ],
 };
 
 export const experience = [
   {
     company: "ThinkMetal",
-    role: "Software Developer Engineer",
+    role: "Full-Stack Engineer",
     period: "02/2025 - Present",
     location: "Chennai, Tamil Nadu",
     points: [
-      "Deployed and operated production applications on AWS EC2 using Docker, configuring Nginx Proxy Manager as a secure reverse proxy to expose services with HTTPS/SSL. Built a GitHub Actions-based CI/CD pipeline to automate builds and deployments.",
-      "Implemented peer-to-peer WebRTC connections to stream real-time desktop video feeds and enable remote machine control, using Socket.io as a signaling and handshake server.",
-      "Designed and built a secure admin panel and backend service using PostgreSQL, Prisma, Zod, RBAC, shadcn/ui, and React Hook Form.",
-      "Automated Linux environment setup by creating a reproducible custom ISO for large-scale provisioning, cutting system configuration time by ~30%.",
+      "Leading backend and DevOps automation by containerizing the **AWS EC2** infrastructure with **Docker** and establishing secure **Nginx** reverse proxies.",
+      "Architected a scalable peer-to-peer video streaming solution for remote machine diagnostics, leveraging **WebRTC** and **Socket.io** for real-time signaling.",
+      "Designed and deployed a secure admin dashboard using **React Hook Form**, **Zod**, and **Prisma ORM**, enforcing strict Role-Based Access Control (RBAC).",
+      "Streamlined deployment workflows by automating Linux environment provisioning, reducing setup time by **~30%** and improving consistency across environments.",
     ],
   },
   {
     company: "ThinkMetal",
-    role: "Software Developer Intern",
+    role: "Software Engineer Intern",
     period: "08/2024 - 02/2025",
     location: "Chennai, Tamil Nadu",
     points: [
-      "Developed a one-click diagnostic tool using efficient long-polling to monitor machine state, enabling multiple users to diagnose the same machine concurrently.",
-      "Customized the Linux environment and automated internal software installation, reducing configuration time by nearly 80%.",
-      "Rebuilt legacy pages into fully responsive interfaces and integrated real-time API calls, improving page load time by 15%.",
-      "Developed a full-featured internal DevTool using Node.js and SolidJS to streamline daily workflows, improving team efficiency by 50%.",
+      "Engineered a real-time diagnostic tool utilizing efficient long-polling, enabling concurrent machine monitoring for multiple clients.",
+      "Optimized internal tooling deployment by automating software installations on Linux, reducing configuration overhead by nearly **80%**.",
+      "Modernized legacy user interfaces into responsive, high-performance applications, improving page load speeds by **15%**.",
+      "Developed a custom internal developer tool using **Node.js** and **SolidJS**, which increased daily team workflow efficiency by **50%**.",
     ],
   },
 ];
@@ -92,26 +92,24 @@ export const experience = [
 export const projects = [
   {
     title: "Secure Chat",
-    description:
-      "Privacy-first real-time chat application using Next.js and Elysia.js.",
+    description: "A privacy-focused, real-time communication platform.",
     tags: ["Next.js", "Elysia.js", "Redis", "Zod", "TanStack Query"],
     githubLink: "https://github.com/sujoy-2811/secure-chat",
     demoLink: "https://chatroom.sujoymanna.in/",
     details: [
-      "Enables secure two-user communication within ephemeral chat rooms.",
-      "Implemented automatic room and message destruction using Redis TTLs, with type-safe APIs.",
+      "Engineered a zero-persistence messaging system ensuring maximum user privacy through ephemeral chat rooms.",
+      "Implemented automated data expiration using Redis TTLs, with strictly typed API contracts for reliability.",
     ],
   },
   {
     title: "React-Notes",
-    description:
-      "Notes application with full CRUD features and offline support.",
+    description: "A robust, offline-first productivity application.",
     tags: ["React", "Local Storage", "Responsive UI"],
     githubLink: "https://github.com/sujoy-2811/react-notes",
     demoLink: "https://notes.sujoymanna.in",
     details: [
-      "Built with full CRUD features and offline support using Local Storage.",
-      "Designed a clean and intuitive interface focused on smooth day-to-day usability.",
+      "Developed a full-featured CRUD application with seamless offline synchronization via Local Storage.",
+      "Optimized UX with a clean, responsive interface designed for efficient information management.",
     ],
   },
 ];

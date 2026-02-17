@@ -10,9 +10,9 @@ const Contact = () => {
         </h2>
 
         <p className="text-lg text-slate-400 max-w-2xl mx-auto mb-12 leading-relaxed">
-          I am currently working as a Software Engineer, but my inbox is always
-          open. Whether you have a question, a potential opportunity to discuss,
-          or just want to say hi, I'll try my best to get back to you!
+          I am currently open to new opportunities. If you have a question, a
+          project in mind, or just want to connect, feel free to reach out. I'll
+          do my best to get back to you!
         </p>
 
         <a

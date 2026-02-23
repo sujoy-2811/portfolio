@@ -91,6 +91,17 @@ export const experience = [
 
 export const projects = [
   {
+    title: "AI Chat",
+    description: "An intelligent, versatile conversational interface.",
+    tags: ["React", "AI Integration", "Tailwind CSS", "Vite"],
+    githubLink: "https://github.com/sujoy-2811/ai-chat",
+    demoLink: "https://ai-chat.sujoymanna.in/",
+    details: [
+      "Developed a responsive AI-powered chat application allowing users to query any topic with instant, context-aware responses.",
+      "Integrated advanced natural language processing APIs to deliver accurate information in a streamlined, user-friendly interface.",
+    ],
+  },
+  {
     title: "Secure Chat",
     description: "A privacy-focused, real-time communication platform.",
     tags: ["Next.js", "Elysia.js", "Redis", "Zod", "TanStack Query"],

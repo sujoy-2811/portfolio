@@ -2,7 +2,7 @@ import { aboutContent } from "../../constants";
 
 const About = () => {
   return (
-    <section id="about" className="py-20 relative w-full">
+    <section id="about" className="py-20 w-full relative">
       <div className="container-custom">
         <h2 className="section-heading mb-12">
           <span className="text-vscode-keyword">01.</span> About Me

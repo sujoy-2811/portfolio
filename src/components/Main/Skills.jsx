@@ -2,7 +2,7 @@ import { skills } from "../../constants";
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-20 relative w-full overflow-hidden">
+    <section id="skills" className="py-20 w-full relative">
       <div className="container-custom">
         <h2 className="section-heading mb-12">
           <span className="text-vscode-keyword">05.</span> Technical Skills
@@ -12,7 +12,7 @@ const Skills = () => {
           {skills.map((skillGroup, index) => (
             <div
               key={index}
-              className="bg-vscode-sidebar border border-vscode-activity rounded-lg p-6 hover:border-vscode-accent/50 transition-all font-mono group relative overflow-hidden h-full"
+              className="bg-vscode-sidebar border border-vscode-activity rounded-lg p-6 hover:border-vscode-text/30 transition-all font-mono group relative overflow-hidden h-full"
             >
               {/* Icon Background Watermark */}
               <div className="absolute -right-6 -bottom-6 opacity-5 group-hover:opacity-10 transition-opacity duration-300 scale-[2.5] grayscale group-hover:grayscale-0 pointer-events-none rotate-12 text-vscode-text">

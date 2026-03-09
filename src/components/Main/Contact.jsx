@@ -2,12 +2,9 @@ import { heroContent } from "../../constants";
 
 const Contact = () => {
   return (
-    <section
-      id="contact"
-      className="py-20 flex flex-col items-center justify-center overflow-hidden min-h-screen"
-    >
-      <div className="container-custom w-full">
-        <h2 className="section-heading">
+    <section id="contact" className="py-20 w-full relative overflow-hidden">
+      <div className="container-custom">
+        <h2 className="section-heading mb-12">
           <span className="text-vscode-keyword">06.</span> Contact
         </h2>
 
@@ -16,10 +13,7 @@ const Contact = () => {
           {/* Terminal Header */}
           <div className="bg-vscode-activity h-8 flex items-center px-4 justify-between border-b border-vscode-bg">
             <div className="flex space-x-2">
-              <a
-                href="/"
-                className="w-3 h-3 rounded-full bg-red-500/80 hover:bg-red-500"
-              ></a>
+              <div className="w-3 h-3 rounded-full bg-red-500/80"></div>
               <div className="w-3 h-3 rounded-full bg-yellow-500/80 hover:bg-yellow-500"></div>
               <div className="w-3 h-3 rounded-full bg-green-500/80 hover:bg-green-500"></div>
             </div>

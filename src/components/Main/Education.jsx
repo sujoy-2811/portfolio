@@ -32,9 +32,7 @@ const Education = () => {
                   </span>
                 </div>
               </div>
-              <span className="text-[#8b949e] text-sm">
-                {edu.location}
-              </span>
+              <span className="text-[#8b949e] text-sm">{edu.location}</span>
             </div>
           ))}
         </div>

@@ -65,26 +65,27 @@ export const aboutContent = {
 export const experience = [
   {
     company: "ThinkMetal",
-    role: "Full-Stack Engineer",
+    role: "Software Developer Engineer",
     period: "02/2025 - Present",
     location: "Chennai, Tamil Nadu",
     points: [
-      "Leading backend and DevOps automation by containerizing the **AWS EC2** infrastructure with **Docker** and establishing secure **Nginx** reverse proxies.",
-      "Architected a scalable peer-to-peer video streaming solution for remote machine diagnostics, leveraging **WebRTC** and **Socket.io** for real-time signaling.",
-      "Designed and deployed a secure admin dashboard using **React Hook Form**, **Zod**, and **Prisma ORM**, enforcing strict Role-Based Access Control (RBAC).",
-      "Streamlined deployment workflows by automating Linux environment provisioning, reducing setup time by **~30%** and improving consistency across environments.",
+      "Deployed and operated production applications on **AWS EC2** with **Docker**, configuring **Nginx Proxy Manager** as a secure reverse proxy with HTTPS/SSL.",
+      "Built and maintained a **GitHub Actions** CI/CD pipeline to automate build and deployment workflows for reliable, low-risk releases.",
+      "Implemented peer-to-peer **WebRTC** streaming for real-time desktop feeds and remote machine control, using **Socket.io** as the signaling and handshake layer.",
+      "Designed and developed a secure admin platform with **Zod**, **Prisma**, and RBAC-based authorization, and built the UI with **shadcn/ui** and **React Hook Form**.",
+      "Automated Linux environment provisioning through a reproducible custom ISO process to standardize machine setup and improve deployment consistency.",
     ],
   },
   {
     company: "ThinkMetal",
-    role: "Software Engineer Intern",
+    role: "Software Developer Intern",
     period: "08/2024 - 02/2025",
     location: "Chennai, Tamil Nadu",
     points: [
-      "Engineered a real-time diagnostic tool utilizing efficient long-polling, enabling concurrent machine monitoring for multiple clients.",
-      "Optimized internal tooling deployment by automating software installations on Linux, reducing configuration overhead by nearly **80%**.",
-      "Modernized legacy user interfaces into responsive, high-performance applications, improving page load speeds by **15%**.",
-      "Developed a custom internal developer tool using **Node.js** and **SolidJS**, which increased daily team workflow efficiency by **50%**.",
+      "Developed a one-click diagnostics tool using efficient long-polling, enabling multiple users to inspect the same machine concurrently.",
+      "Customized Linux environments and automated internal software installation to replace manual setup with a repeatable workflow.",
+      "Rebuilt legacy pages into responsive interfaces and integrated real-time API calls to deliver dynamic, production-ready user experiences.",
+      "Developed an internal DevTool with **Node.js** and **SolidJS** to streamline day-to-day engineering workflows.",
     ],
   },
 ];

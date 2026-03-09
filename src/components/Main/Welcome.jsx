@@ -32,8 +32,7 @@ const Welcome = () => {
           <div className="flex flex-col sm:flex-row gap-4">
             <a
               href={heroContent.resumeLink}
-              target="_blank"
-              rel="noopener noreferrer"
+              download="Sujoy_Manna_Resume.pdf"
               className="bg-vscode-accent text-white px-6 py-3 rounded hover:bg-vscode-accent/80 transition-colors font-semibold text-center"
             >
               downloadResume()
@@ -136,8 +135,10 @@ const Welcome = () => {
                     5
                   </span>
                   &nbsp;&nbsp;
-                  <span className="text-vscode-function">problemSolver</span>:{" "}
-                  <span className="text-vscode-keyword">function</span>() {`{`}
+                  <span className="text-vscode-function">
+                    problemSolver
+                  </span>: <span className="text-vscode-keyword">function</span>
+                  () {`{`}
                 </div>
                 <div>
                   <span className="text-gray-600 select-none mr-2 sm:mr-4">

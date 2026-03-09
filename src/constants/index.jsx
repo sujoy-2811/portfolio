@@ -44,7 +44,7 @@ export const heroContent = {
   role: "Full-Stack Engineer | System Design",
   tagline: "Building high-performance, real-time applications at scale.",
   resumeLink:
-    "https://drive.google.com/file/d/15ftEEo-GzWxuqMZx49lPAjuB2si7Dyu-/view?usp=sharing",
+    "https://drive.google.com/uc?export=download&id=15ftEEo-GzWxuqMZx49lPAjuB2si7Dyu-",
   socials: {
     github: "https://github.com/sujoy-2811",
     linkedin: "https://www.linkedin.com/in/sujoy2811/",

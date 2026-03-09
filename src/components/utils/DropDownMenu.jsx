@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-import { navLinksData } from "../../constants/index";
+import { heroContent, navLinksData } from "../../constants/index";
 import { useRef, useEffect } from "react";
 
 const DropDownMenu = ({ closeMenu }) => {
@@ -24,18 +24,18 @@ const DropDownMenu = ({ closeMenu }) => {
     >
       <ul className="flex flex-col font-mono text-[15px]">
         {navLinksData.map((item, idx) => (
-          <li key={item.id}>
+          <li key={item.id} className="group">
             <Link
               onClick={() => closeMenu(false)}
-              className="flex items-center gap-3 px-4 py-3 text-[#8b949e] hover:text-vscode-text hover:bg-[#0d1117] rounded-md transition-colors cursor-pointer"
-              activeClass="!text-vscode-text bg-[#0d1117]"
+              className="flex items-center gap-3 px-4 py-3 text-[#8b949e] rounded-md border border-transparent bg-transparent hover:text-vscode-text hover:bg-[#0d1117] hover:border-vscode-accent/30 transition-all duration-200 cursor-pointer"
+              activeClass="!text-vscode-text bg-[#0d1117] border border-vscode-accent/40"
               to={item.link}
               spy={true}
               smooth={true}
               offset={-80}
               duration={500}
             >
-              <span className="text-vscode-accent/60 text-xs w-5">
+              <span className="text-vscode-accent/60 text-xs w-5 group-hover:text-vscode-accent transition-colors duration-200">
                 {String(idx + 1).padStart(2, "0")}.
               </span>
               {item.title}
@@ -44,9 +44,8 @@ const DropDownMenu = ({ closeMenu }) => {
         ))}
         <li className="mt-1 px-2 pb-1">
           <a
-            href="https://drive.google.com/file/d/15ftEEo-GzWxuqMZx49lPAjuB2si7Dyu-/view?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
+            href={heroContent.resumeLink}
+            download="Sujoy_Manna_Resume.pdf"
             className="block text-center text-[#0d1117] bg-vscode-accent hover:bg-vscode-accent/90 py-2.5 rounded-md transition-colors text-sm font-semibold"
           >
             Resume

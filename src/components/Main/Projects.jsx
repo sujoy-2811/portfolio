@@ -3,7 +3,7 @@ import { BiLinkExternal, BiLogoGithub } from "react-icons/bi";
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 items-center">
+    <section id="projects" className="py-20 w-full relative">
       <div className="container-custom">
         <h2 className="section-heading mb-12">
           <span className="text-vscode-keyword">03.</span> Featured Projects

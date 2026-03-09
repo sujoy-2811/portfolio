@@ -4,7 +4,9 @@ const Skills = () => {
   return (
     <section id="skills" className="py-20 relative w-full overflow-hidden">
       <div className="container-custom">
-        <h2 className="section-heading mb-12">Technical Skills</h2>
+        <h2 className="section-heading mb-12">
+          <span className="text-vscode-keyword">05.</span> Technical Skills
+        </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skills.map((skillGroup, index) => (

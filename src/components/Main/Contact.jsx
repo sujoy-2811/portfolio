@@ -6,8 +6,10 @@ const Contact = () => {
       id="contact"
       className="py-20 flex flex-col items-center justify-center overflow-hidden min-h-screen"
     >
-      <div className="container-custom max-w-4xl w-full">
-        <h2 className="section-heading">Contact</h2>
+      <div className="container-custom w-full">
+        <h2 className="section-heading">
+          <span className="text-vscode-keyword">06.</span> Contact
+        </h2>
 
         {/* Terminal Window */}
         <div className="bg-vscode-bg border border-vscode-activity rounded-lg shadow-2xl overflow-hidden text-left font-mono">

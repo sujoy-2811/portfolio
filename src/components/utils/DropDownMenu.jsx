@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-import { heroContent, navLinksData } from "../../constants/index";
+import { navLinksData } from "../../constants/index";
 import { useRef, useEffect } from "react";
 
 const DropDownMenu = ({ closeMenu }) => {
@@ -42,15 +42,6 @@ const DropDownMenu = ({ closeMenu }) => {
             </Link>
           </li>
         ))}
-        <li className="mt-1 px-2 pb-1">
-          <a
-            href={heroContent.resumeLink}
-            download="Sujoy_Manna_Resume.pdf"
-            className="block text-center text-[#0d1117] bg-vscode-accent hover:bg-vscode-accent/90 py-2.5 rounded-md transition-colors text-sm font-semibold"
-          >
-            Resume
-          </a>
-        </li>
       </ul>
     </div>
   );

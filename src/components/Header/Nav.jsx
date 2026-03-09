@@ -8,20 +8,13 @@ function Nav({ className }) {
 
   return (
     <nav
-      className={`flex justify-between items-center py-3 px-5 md:px-10 max-w-7xl mx-auto w-full z-50 font-mono ${className}`}
+      className={`flex justify-between items-center py-4 px-5 md:px-10 max-w-7xl mx-auto w-full z-50 ${className}`}
     >
-      {/* Logo — terminal prompt style */}
-      <a
-        href="#home"
-        className="flex items-center gap-1.5 group cursor-pointer select-none"
-      >
-        <span className="text-green-400 text-sm group-hover:text-green-300 transition-colors">
-          ~$
+      {/* Logo */}
+      <a href="#home" className="cursor-pointer select-none">
+        <span className="text-vscode-text font-bold text-xl tracking-tight">
+          Sujoy
         </span>
-        <span className="text-vscode-text font-bold text-lg tracking-tight">
-          sujoy
-        </span>
-        <span className="w-2 h-5 bg-vscode-accent/80 inline-block ml-1 animate-pulse rounded-sm" />
       </a>
 
       {/* Mobile Menu Toggle */}

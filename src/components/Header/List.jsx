@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-import { heroContent, navLinksData } from "../../constants/index";
+import { navLinksData } from "../../constants/index";
 
 function List({ className }) {
   return (
@@ -22,15 +22,6 @@ function List({ className }) {
           </Link>
         </li>
       ))}
-      <li className="ml-3">
-        <a
-          href={heroContent.resumeLink}
-          download="Sujoy_Manna_Resume.pdf"
-          className="text-[#0d1117] bg-vscode-accent hover:bg-vscode-accent/90 px-4 py-2 rounded-md transition-colors text-sm font-semibold"
-        >
-          Resume
-        </a>
-      </li>
     </ul>
   );
 }

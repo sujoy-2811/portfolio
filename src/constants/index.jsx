@@ -65,6 +65,7 @@ export const aboutContent = {
 export const experience = [
   {
     company: "ThinkMetal",
+    companyLink: "https://thinkmetal.in/",
     role: "Software Developer Engineer",
     period: "02/2025 - Present",
     location: "Chennai, Tamil Nadu",
@@ -78,6 +79,7 @@ export const experience = [
   },
   {
     company: "ThinkMetal",
+    companyLink: "https://thinkmetal.in/",
     role: "Software Developer Intern",
     period: "08/2024 - 02/2025",
     location: "Chennai, Tamil Nadu",

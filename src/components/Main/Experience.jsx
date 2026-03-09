@@ -18,7 +18,19 @@ const Experience = () => {
                 <h3 className="text-xl font-bold text-vscode-function group-hover:text-vscode-accent transition-colors">
                   {exp.role}{" "}
                   <span className="text-vscode-keyword text-base font-normal">
-                    @ {exp.company}
+                    @{" "}
+                    {exp.companyLink ? (
+                      <a
+                        href={exp.companyLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-vscode-keyword/90 hover:text-vscode-accent underline decoration-vscode-activity hover:decoration-vscode-accent underline-offset-2 transition-colors duration-200"
+                      >
+                        {exp.company}
+                      </a>
+                    ) : (
+                      exp.company
+                    )}
                   </span>
                 </h3>
                 <span className="text-sm font-mono text-vscode-comment mt-1 sm:mt-0">

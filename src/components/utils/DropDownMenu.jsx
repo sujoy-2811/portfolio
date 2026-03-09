@@ -20,31 +20,34 @@ const DropDownMenu = ({ closeMenu }) => {
   return (
     <div
       ref={menuRef}
-      className="absolute top-16 right-6 w-48 bg-slate-800 border border-slate-700/50 rounded-xl shadow-2xl p-4 z-50 flex flex-col gap-3 md:hidden animate-fade-in animate-slide-in-from-top-4"
+      className="absolute top-14 right-4 left-4 bg-[#161b22] border border-[#21262d] rounded-lg shadow-2xl p-2 z-50 flex flex-col md:hidden animate-fade-in"
     >
-      <ul className="flex flex-col gap-1">
-        {navLinksData.map((item) => (
+      <ul className="flex flex-col font-mono text-[15px]">
+        {navLinksData.map((item, idx) => (
           <li key={item.id}>
             <Link
               onClick={() => closeMenu(false)}
-              className="block px-4 py-2 text-slate-300 hover:text-sky-400 hover:bg-slate-700/50 rounded-lg transition-colors cursor-pointer text-sm font-medium"
-              activeClass="text-sky-400 bg-slate-700/30"
+              className="flex items-center gap-3 px-4 py-3 text-[#8b949e] hover:text-vscode-text hover:bg-[#0d1117] rounded-md transition-colors cursor-pointer"
+              activeClass="!text-vscode-text bg-[#0d1117]"
               to={item.link}
               spy={true}
               smooth={true}
               offset={-80}
               duration={500}
             >
+              <span className="text-vscode-accent/60 text-xs w-5">
+                {String(idx + 1).padStart(2, "0")}.
+              </span>
               {item.title}
             </Link>
           </li>
         ))}
-        <li>
+        <li className="mt-1 px-2 pb-1">
           <a
             href="https://drive.google.com/file/d/15ftEEo-GzWxuqMZx49lPAjuB2si7Dyu-/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
-            className="block px-4 py-2 mt-2 text-center text-sky-400 border border-sky-500/30 rounded-lg hover:bg-sky-500/10 transition-colors text-sm font-medium"
+            className="block text-center text-[#0d1117] bg-vscode-accent hover:bg-vscode-accent/90 py-2.5 rounded-md transition-colors text-sm font-semibold"
           >
             Resume
           </a>

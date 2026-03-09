@@ -13,21 +13,37 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-vscode-sidebar border border-vscode-activity rounded-lg p-6 hover:border-vscode-accent/50 transition-all group flex flex-col h-full hover:-translate-y-1"
+              className="bg-[#0d1117] border border-vscode-activity rounded-md p-6 hover:border-vscode-text/30 transition-all group flex flex-col h-full hover:shadow-xl hover:shadow-black/50"
             >
               <div className="flex justify-between items-start mb-4">
-                <h3 className="text-xl font-bold text-vscode-function group-hover:text-vscode-accent transition-colors flex items-center">
-                  <span className="text-vscode-keyword mr-2">function</span>{" "}
-                  {project.title}
-                  <span className="text-vscode-text">()</span>
-                </h3>
-                <div className="flex gap-4 text-xl text-vscode-text/60">
+                <div className="flex items-center gap-2">
+                  <span className="text-vscode-text/40">
+                    <svg
+                      aria-hidden="true"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      version="1.1"
+                      width="16"
+                      fill="currentColor"
+                      className="octicon octicon-repo"
+                    >
+                      <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path>
+                    </svg>
+                  </span>
+                  <h3 className="text-lg font-bold text-vscode-function group-hover:text-vscode-accent transition-colors hover:underline cursor-pointer">
+                    {project.title}
+                  </h3>
+                  <span className="px-2 py-0.5 rounded-full border border-vscode-activity text-xs text-vscode-text/60 ml-2">
+                    Public
+                  </span>
+                </div>
+                <div className="flex gap-4 text-lg text-vscode-text/60">
                   {project.githubLink && (
                     <a
                       href={project.githubLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="hover:text-white transition-colors"
+                      className="hover:text-vscode-text transition-colors"
                     >
                       <BiLogoGithub />
                     </a>
@@ -37,7 +53,7 @@ const Projects = () => {
                       href={project.demoLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="hover:text-sky-400 transition-colors"
+                      className="hover:text-vscode-text transition-colors"
                     >
                       <BiLinkExternal />
                     </a>
@@ -45,25 +61,31 @@ const Projects = () => {
                 </div>
               </div>
 
-              <p className="text-slate-300 mb-6 flex-grow leading-relaxed">
+              <p className="text-vscode-text/80 mb-6 text-sm leading-relaxed flex-grow">
                 {project.description}
               </p>
 
-              <ul className="space-y-2 mb-6 text-sm text-slate-400">
-                {project.details.map((detail, i) => (
-                  <li key={i} className="flex items-start gap-2">
-                    <span className="text-sky-500 mt-1">▹</span>
-                    <span>{detail}</span>
-                  </li>
-                ))}
-              </ul>
-
-              <div className="flex flex-wrap gap-2 mt-auto pt-4 border-t border-slate-700/50">
-                {project.tags.map((tag, i) => (
-                  <span key={i} className="text-xs font-mono text-sky-400/80">
-                    {tag}
-                  </span>
-                ))}
+              <div className="mt-auto">
+                <div className="flex flex-wrap gap-3 items-center">
+                  {project.tags &&
+                    project.tags.map((tag, i) => (
+                      <div
+                        key={i}
+                        className="flex items-center gap-1.5 text-xs text-vscode-text/70"
+                      >
+                        <span
+                          className={`w-3 h-3 rounded-full ${
+                            i % 3 === 0
+                              ? "bg-yellow-400"
+                              : i % 3 === 1
+                              ? "bg-blue-400"
+                              : "bg-red-400"
+                          }`}
+                        ></span>
+                        {tag}
+                      </div>
+                    ))}
+                </div>
               </div>
             </div>
           ))}

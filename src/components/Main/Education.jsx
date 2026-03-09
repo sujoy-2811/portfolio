@@ -2,7 +2,7 @@ import { education } from "../../constants";
 
 const Education = () => {
   return (
-    <section id="education" className="py-20 bg-slate-800/20 w-full relative">
+    <section id="education" className="py-20 w-full relative">
       <div className="container-custom">
         <h2 className="section-heading mb-12">Education</h2>
 
@@ -10,7 +10,7 @@ const Education = () => {
           {education.map((edu, index) => (
             <div
               key={index}
-              className="glass-card flex flex-col sm:flex-row items-center sm:items-start justify-between p-8 sm:p-10 border-l-4 border-l-sky-500 rounded-xl relative overflow-hidden group"
+              className="bg-vscode-sidebar border border-vscode-activity rounded-lg p-6 mb-6 hover:border-vscode-accent/50 transition-all font-mono group relative overflow-hidden"
             >
               <div className="absolute inset-0 bg-sky-500/5 group-hover:bg-sky-500/10 transition-all duration-300 pointer-events-none"></div>
 

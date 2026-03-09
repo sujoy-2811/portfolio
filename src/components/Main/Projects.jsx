@@ -3,21 +3,25 @@ import { BiLinkExternal, BiLogoGithub } from "react-icons/bi";
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 bg-slate-800/20 items-center">
+    <section id="projects" className="py-20 items-center">
       <div className="container-custom">
-        <h2 className="section-heading mb-12">Featured Projects</h2>
+        <h2 className="section-heading mb-12">
+          <span className="text-vscode-keyword">03.</span> Featured Projects
+        </h2>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 font-mono">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="glass-card group hover:bg-slate-800/80 flex flex-col h-full"
+              className="bg-vscode-sidebar border border-vscode-activity rounded-lg p-6 hover:border-vscode-accent/50 transition-all group flex flex-col h-full hover:-translate-y-1"
             >
               <div className="flex justify-between items-start mb-4">
-                <h3 className="text-2xl font-bold text-slate-100 group-hover:text-sky-400 transition-colors">
+                <h3 className="text-xl font-bold text-vscode-function group-hover:text-vscode-accent transition-colors flex items-center">
+                  <span className="text-vscode-keyword mr-2">function</span>{" "}
                   {project.title}
+                  <span className="text-vscode-text">()</span>
                 </h3>
-                <div className="flex gap-4 text-xl text-slate-400">
+                <div className="flex gap-4 text-xl text-vscode-text/60">
                   {project.githubLink && (
                     <a
                       href={project.githubLink}

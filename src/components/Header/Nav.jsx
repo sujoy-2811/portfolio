@@ -8,20 +8,18 @@ function Nav({ className }) {
 
   return (
     <nav
-      className={`flex justify-between items-center py-4 px-6 md:px-10 max-w-7xl mx-auto w-full z-50 ${className}`}
+      className={`flex justify-between items-center py-4 px-6 md:px-12 max-w-7xl mx-auto w-full z-50 font-mono ${className}`}
     >
       {/* Name / Logo */}
-      <h1 className="text-2xl font-bold cursor-pointer font-mono tracking-tighter hover:scale-105 transition-transform duration-300">
-        <span className="text-sky-400">&lt;</span>
-        <span className="bg-clip-text text-transparent bg-gradient-to-r from-slate-100 to-slate-400">
-          Sujoy
-        </span>
-        <span className="text-sky-400">/&gt;</span>
+      <h1 className="text-2xl font-bold cursor-pointer font-mono tracking-tighter text-vscode-text flex items-center gap-2">
+        <span className="text-vscode-comment text-lg">&lt;</span>
+        <span className="text-vscode-keyword">Sujoy</span>
+        <span className="text-vscode-comment text-lg">/&gt;</span>
       </h1>
 
       {/* Mobile Menu Icon */}
       <button
-        className="text-slate-100 text-3xl md:hidden hover:text-sky-400 transition-colors"
+        className="text-vscode-text text-3xl md:hidden hover:text-vscode-accent transition-colors"
         onClick={() => setMenuShow((prev) => !prev)}
       >
         <BiMenuAltRight />

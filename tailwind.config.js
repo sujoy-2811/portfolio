@@ -8,8 +8,21 @@ export default {
         mono: ["Fira Code", "monospace"],
       },
       colors: {
+        vscode: {
+          bg: "#1e1e1e",
+          sidebar: "#252526",
+          activity: "#333333",
+          accent: "#007acc",
+          text: "#d4d4d4",
+          comment: "#6a9955",
+          keyword: "#569cd6",
+          string: "#ce9178",
+          function: "#dcdcaa",
+          number: "#b5cea8",
+          class: "#4ec9b0",
+        },
         slate: {
-          850: "#1e293b", // Adjusting color slightly lighter for readabilty or stick
+          850: "#1e293b",
         },
       },
       animation: {

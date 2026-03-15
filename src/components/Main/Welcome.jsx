@@ -120,7 +120,8 @@ const Welcome = () => {
                   <span className="text-vscode-variable">skills</span>: [
                   <span className="text-vscode-string">"React"</span>,{" "}
                   <span className="text-vscode-string">"Node"</span>,{" "}
-                  <span className="text-vscode-string">"System Design"</span>],
+                  <span className="text-vscode-string">"Database"</span>
+                  ],
                 </div>
                 <div>
                   <span className="text-gray-600 select-none mr-2 sm:mr-4">

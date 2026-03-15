@@ -41,7 +41,7 @@ export const navLinksData = [
 
 export const heroContent = {
   name: "Sujoy Manna",
-  role: "Full-Stack Engineer | System Design",
+  role: "Software Engineer | Full-Stack",
   tagline: "Building high-performance, real-time applications at scale.",
   resumeLink:
     "https://drive.google.com/uc?export=download&id=15ftEEo-GzWxuqMZx49lPAjuB2si7Dyu-",
@@ -94,14 +94,14 @@ export const experience = [
 
 export const projects = [
   {
-    title: "AI Chat",
-    description: "An intelligent, versatile conversational interface.",
-    tags: ["React", "AI Integration", "Tailwind CSS", "Vite"],
-    githubLink: "https://github.com/sujoy-2811/ai-chat",
-    demoLink: "https://aichat.sujoymanna.in/",
+    title: "SmartChef AI",
+    description: "A full-stack AI-powered meal planning application.",
+    tags: ["React", "Node.js", "Express", "PostgreSQL", "Docker", "Gemini AI"],
+    githubLink: "https://github.com/sujoy-2811/smart-chef-ai",
+    demoLink: "https://smartchef-ai.sujoymanna.in",
     details: [
-      "Developed a responsive AI-powered chat application allowing users to query any topic with instant, context-aware responses.",
-      "Integrated advanced natural language processing APIs to deliver accurate information in a streamlined, user-friendly interface.",
+      "Built a full-stack AI-powered meal planning application using React, Node.js, Express, and PostgreSQL that generates recipes from pantry ingredients.",
+      "Integrated Google Gemini AI with structured prompt engineering to generate recipes with ingredients, instructions, and nutrition data while enforcing strict JSON responses.",
     ],
   },
   {
@@ -124,6 +124,17 @@ export const projects = [
     details: [
       "Developed a full-featured CRUD application with seamless offline synchronization via Local Storage.",
       "Optimized UX with a clean, responsive interface designed for efficient information management.",
+    ],
+  },
+  {
+    title: "AI Chat",
+    description: "An intelligent, versatile conversational interface.",
+    tags: ["React", "AI Integration", "Tailwind CSS", "Vite"],
+    githubLink: "https://github.com/sujoy-2811/ai-chat",
+    demoLink: "https://aichat.sujoymanna.in/",
+    details: [
+      "Developed a responsive AI-powered chat application allowing users to query any topic with instant, context-aware responses.",
+      "Integrated advanced natural language processing APIs to deliver accurate information in a streamlined, user-friendly interface.",
     ],
   },
 ];

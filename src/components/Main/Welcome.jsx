@@ -117,10 +117,10 @@ const Welcome = () => {
                     3
                   </span>
                   &nbsp;&nbsp;
-                  <span className="text-vscode-variable">skills</span>: [
-                  <span className="text-vscode-string">"React"</span>,{" "}
-                  <span className="text-vscode-string">"Node"</span>,{" "}
-                  <span className="text-vscode-string">"Database"</span>
+                  <span className="text-vscode-variable">languages</span>: [
+                  <span className="text-vscode-string">"Javascript"</span>,{" "}
+                  <span className="text-vscode-string">"TypeScript"</span>,{" "}
+                  <span className="text-vscode-string">"Java"</span>
                   ],
                 </div>
                 <div>
@@ -128,12 +128,54 @@ const Welcome = () => {
                     4
                   </span>
                   &nbsp;&nbsp;
+                  <span className="text-vscode-variable">frontend</span>: [
+                  <span className="text-vscode-string">"React"</span>,{" "}
+                  <span className="text-vscode-string">"Next.js"</span>,{" "}
+                  <span className="text-vscode-string">"Tailwind"</span>
+                  ],
+                </div>
+                <div>
+                  <span className="text-gray-600 select-none mr-2 sm:mr-4">
+                    5
+                  </span>
+                  &nbsp;&nbsp;
+                  <span className="text-vscode-variable">backend</span>: [
+                  <span className="text-vscode-string">"Node.js"</span>,{" "}
+                  <span className="text-vscode-string">"PostgreSQL"</span>,{" "}
+                  <span className="text-vscode-string">"MongoDB"</span>
+                  ],
+                </div>
+                <div>
+                  <span className="text-gray-600 select-none mr-2 sm:mr-4">
+                    6
+                  </span>
+                  &nbsp;&nbsp;
+                  <span className="text-vscode-variable">tools</span>: [
+                  <span className="text-vscode-string">"Docker"</span>,{" "}
+                  <span className="text-vscode-string">"AWS"</span>,{" "}
+                  <span className="text-vscode-string">"Nginx"</span>
+                  ],
+                </div>
+                <div>
+                  <span className="text-gray-600 select-none mr-2 sm:mr-4">
+                    7
+                  </span>
+                  &nbsp;&nbsp;
                   <span className="text-vscode-variable">hardWorker</span>:{" "}
                   <span className="text-vscode-keyword">true</span>,
                 </div>
                 <div>
                   <span className="text-gray-600 select-none mr-2 sm:mr-4">
-                    5
+                    8
+                  </span>
+                  &nbsp;&nbsp;
+                  <span className="text-vscode-variable">
+                    quickLearner
+                  </span>: <span className="text-vscode-keyword">true</span>,
+                </div>
+                <div>
+                  <span className="text-gray-600 select-none mr-2 sm:mr-4">
+                    9
                   </span>
                   &nbsp;&nbsp;
                   <span className="text-vscode-function">
@@ -143,7 +185,7 @@ const Welcome = () => {
                 </div>
                 <div>
                   <span className="text-gray-600 select-none mr-2 sm:mr-4">
-                    6
+                    10
                   </span>
                   &nbsp;&nbsp;&nbsp;&nbsp;
                   <span className="text-vscode-keyword">return</span>{" "}
@@ -151,13 +193,13 @@ const Welcome = () => {
                 </div>
                 <div>
                   <span className="text-gray-600 select-none mr-2 sm:mr-4">
-                    7
+                    11
                   </span>
                   &nbsp;&nbsp;{`}`},
                 </div>
                 <div>
                   <span className="text-gray-600 select-none mr-2 sm:mr-4">
-                    8
+                    12
                   </span>
                   &nbsp;&nbsp;
                   <span className="text-vscode-function">hireable</span>:{" "}
@@ -165,7 +207,7 @@ const Welcome = () => {
                 </div>
                 <div>
                   <span className="text-gray-600 select-none mr-2 sm:mr-4">
-                    9
+                    13
                   </span>
                   &nbsp;&nbsp;&nbsp;&nbsp;
                   <span className="text-vscode-keyword">return</span>{" "}
@@ -173,13 +215,13 @@ const Welcome = () => {
                 </div>
                 <div>
                   <span className="text-gray-600 select-none mr-2 sm:mr-4">
-                    10
+                    14
                   </span>
                   &nbsp;&nbsp;{`}`}
                 </div>
                 <div>
                   <span className="text-gray-600 select-none mr-2 sm:mr-4">
-                    11
+                    15
                   </span>
                   <span className="text-vscode-text">{`}`}</span>;
                 </div>

@@ -31,6 +31,12 @@ const Welcome = () => {
 
           <div className="flex flex-col sm:flex-row gap-4">
             <a
+              href="#contact"
+              className="bg-vscode-accent text-white px-6 py-3 rounded hover:bg-vscode-accent/80 transition-colors font-semibold text-center"
+            >
+              contactMe()
+            </a>
+            {/* <a
               href={heroContent.resumeLink}
               download="Sujoy_Manna_Resume.pdf"
               className="bg-vscode-accent text-white px-6 py-3 rounded hover:bg-vscode-accent/80 transition-colors font-semibold text-center"
@@ -42,7 +48,7 @@ const Welcome = () => {
               className="border border-vscode-activity text-vscode-text px-6 py-3 rounded hover:bg-vscode-activity/50 transition-colors text-center"
             >
               contactMe()
-            </a>
+            </a> */}
           </div>
 
           <div className="flex gap-6 mt-12 text-3xl text-vscode-text/60">

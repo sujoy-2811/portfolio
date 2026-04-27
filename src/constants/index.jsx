@@ -94,6 +94,27 @@ export const experience = [
 
 export const projects = [
   {
+    title: "MedTransparency",
+    description:
+      "A full-stack medical tourism transparency platform with an agentic AI assistant.",
+    tags: [
+      "React",
+      "FastAPI",
+      "Python",
+      "Redis",
+      "Docker",
+      "OpenRouter AI",
+      "JWT",
+      "SQLAlchemy",
+    ],
+    githubLink: "https://github.com/sujoy-2811/med_transparency",
+    demoLink: "https://med.sujoymanna.in/",
+    details: [
+      'MedGuide, an agentic AI assistant, autonomously decides which of 5 database tools to call based on the user\'s natural language query — searching procedures, comparing regions, ranking hospitals, and fetching patient outcomes — with results streamed live via Server-Sent Events.',
+      "Patients can search and compare treatment costs across 18 hospitals in 8 countries, filter by budget and wait time, and contribute anonymous procedure data — all backed by a Redis-cached ranking engine and JWT-authenticated accounts.",
+    ],
+  },
+  {
     title: "SmartChef AI",
     description: "A full-stack AI-powered meal planning application.",
     tags: ["React", "Node.js", "Express", "PostgreSQL", "Docker", "Gemini AI"],
